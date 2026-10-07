@@ -5,7 +5,6 @@
 ExecuteModule(xml_gameinfo::GameIds, char const*, char const*) | meritthon.so
 Tournamaxx::AnyTournaChamp() | meritthon.so
 Tournamaxx::Instance() | meritthon.so
-HighScoresManager::LowestScore(int) | meritthon.so
 NVRAMMap::SetGameOption(xml_gameoptions::GameOptionIndex, unsigned char) | meritthon.so
 db_config::Merithon_db::GetRecord_TournGames(db_config::Merithon_record*, unsigned long, xml_gameinfo::GameIds) | meritthon.so
 textDesc | meritthon.so
