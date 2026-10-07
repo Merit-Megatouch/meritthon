@@ -1,0 +1,77 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+ExecuteModule(xml_gameinfo::GameIds, char const*, char const*) | meritthon.so
+PlayWave(char*, unsigned short, int, int, int, bool) | meritthon.so
+QueFlush(bool) | meritthon.so
+TextSystem::SetTextDescription(TextDesc const&) | meritthon.so
+Tournamaxx::AnyTournaChamp() | meritthon.so
+Tournamaxx::Instance() | meritthon.so
+WorldClass::ClearScreen() | meritthon.so
+WorldClass::RefreshArea(int, int, int, int) | meritthon.so
+WorldClass::ResetTimers() | meritthon.so
+WorldClass::WaitOnFrame(unsigned long, bool) | meritthon.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | meritthon.so
+WorldClass::SetBack(char const*, int) | meritthon.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | meritthon.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | meritthon.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | meritthon.so
+WorldClass::WorldClass() | meritthon.so
+db_gamedata::gamedata_record::gamedata_record(db_gamedata::gamedata_record const&) | meritthon.so
+db_gamedata::gamedata_record::gamedata_record() | meritthon.so
+db_gamedata::gamedata_record::~gamedata_record() | meritthon.so
+system_info::SystemInfo::GetInstance() | meritthon.so
+system_info::SystemInfo::IsPlatformGameTime() | meritthon.so
+xml_gameinfo::enum_GameIds_tag(xml_gameinfo::GameIds, bool) | meritthon.so
+HighScoresManager::LowestScore(int) | meritthon.so
+ads::tracking::record_ad(db_ad_data::Type, xml_gameinfo::GameIds, char const*) | meritthon.so
+List::Push(Group*) | meritthon.so
+List::Clear(unsigned char) | meritthon.so
+List::List(List*) | meritthon.so
+Group::Signal(Group::SpriteSignalType) | meritthon.so
+Group::Signal(SpriteSignal*) | meritthon.so
+Group::Message(Group::SpriteSignalType) | meritthon.so
+Group::Message(SpriteSignal*) | meritthon.so
+Sprite::DoNextFrame() | meritthon.so
+Sprite::AssignString(String*, unsigned long) | meritthon.so
+Sprite::ClicksEnabled | meritthon.so
+Sprite::LastEventTime() | meritthon.so
+Sprite::CreateTextDropShadow(float, float, unsigned long, int, int, int) | meritthon.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | meritthon.so
+Sprite::Copy() | meritthon.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | meritthon.so
+Sprite::Reset() | meritthon.so
+Sprite::DoDraw() | meritthon.so
+Sprite::Enable(unsigned long) | meritthon.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | meritthon.so
+Sprite::SetBmp(Bitmap*, unsigned long) | meritthon.so
+Sprite::Signal(Group::SpriteSignalType) | meritthon.so
+Sprite::Signal(SpriteSignal*) | meritthon.so
+Sprite::Disable(unsigned long, bool) | meritthon.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | meritthon.so
+Sprite::Message(Group::SpriteSignalType) | meritthon.so
+Sprite::Message(SpriteSignal*) | meritthon.so
+Sprite::SetCord(float, float, float, unsigned long) | meritthon.so
+Sprite::SetSize(int, int) | meritthon.so
+Sprite::SetAlpha(int, unsigned long) | meritthon.so
+Sprite::DoCommand(int) | meritthon.so
+Sprite::PlaySound(char*, int, unsigned long) | meritthon.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | meritthon.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | meritthon.so
+Sprite::~Sprite() | meritthon.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | meritthon.so
+NVRAMMap::SetGameOption(xml_gameoptions::GameOptionIndex, unsigned char) | meritthon.so
+TextDesc::SetFontName(char const*) | meritthon.so
+DBGlobals::Instance() | meritthon.so
+GameClass::GameClass() | meritthon.so
+GameClass::~GameClass() | meritthon.so
+db_config::Merithon_db::GetRecord_TournGames(db_config::Merithon_record*, unsigned long, xml_gameinfo::GameIds) | meritthon.so
+typeinfo for Sprite | meritthon.so
+typeinfo for GameClass | meritthon.so
+vtable for DOSLinuxWorld | meritthon.so
+al_findclose | meritthon.so
+al_findfirst | meritthon.so
+al_findnext | meritthon.so
+file_time | meritthon.so
+textDesc | meritthon.so
